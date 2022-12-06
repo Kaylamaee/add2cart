@@ -1,0 +1,67 @@
+@import "assets";
+
+.title{
+    font-family: $font1;
+    font-weight: normal;
+    color: $color1;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 300%;
+}
+
+.q1, .q2, .q3, .q4, .q5{
+    background-color: $color2;
+    margin: auto;
+    margin-top: 1%;
+    padding: 1.25%;
+    font-size: 130%;
+    font-family: $font2;
+    font-weight: bold;
+
+    p{
+        display: inline;
+        color: $color1;
+    }
+
+    .plussign{
+      
+        
+        text-decoration: none;
+        vertical-align: top;
+        margin-top: -1.5%;
+        color: $color1;
+        font-size: 130%;
+    }
+
+    .btn:hover, .btn:focus, .btn:active, .btn:active:focus:not(:disabled):not(.disabled), .btn:focus, .btn:active, .btn:hover {
+        box-shadow: none!important;
+        outline: 0;
+    }
+
+    .plussign:hover{
+        color: $color3;
+    }
+
+    .plussign:active, :focus{
+        color: $color5;
+    }
+
+    #ans1, #ans2, #ans3, #ans4, #ans5{
+        display: block;
+        font-family: $font1;
+        font-weight: lighter;
+        color: $color4;
+        margin-top: 2.5%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+}
+
+.q1{
+    margin-top: 2%;
+}
+
+.q5{
+    margin-bottom: 2%;
+}

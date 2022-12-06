@@ -1,0 +1,123 @@
+CREATE: in /users/signup path
+{
+    "identity": "customer",
+    "fullName": "Juan Dela Cruz",
+    "email": "jdc@gmail.com",
+    "phoneNum": "09987654321",
+    "username": "jdchiraya",
+    "password": "jdc123456",
+    "birthday": "2001-12-28",
+    "gender": "male"
+}
+
+{
+    "identity": "customer",
+    "fullName": "Athena Patricio",
+    "email": "abrp@gmail.com",
+    "phoneNum": "09987654321",
+    "username": "athenahiraya",
+    "password": "abrp1230",
+    "birthday": "2002-12-30",
+    "gender": "female"
+}
+
+{
+    "identity": "admin",
+    "fullName": "Homeland",
+    "username": "homelamd",
+    "password": "homelandpass"
+}
+
+{
+    "identity": "admin",
+    "fullName": "Charlotte Folk",
+    "username": "charlottefolk",
+    "password": "charlottefolkpass"
+}
+
+{
+    "identity": "admin",
+    "fullName": "Essentiel MNL",
+    "username": "essentielmnl",
+    "password": "essentielmnlpass"
+}
+
+READ: all customers, and a user by username in req.params
+
+UPDATE: update by id (update username by username in req.body)
+{
+    "username": "newUsername"
+}
+
+DELETE: delete a user by username
+
+================================================================
+
+CREATE in /product/createProduct
+{
+        "prodID": 1,
+        "image": "/images/products/pantsborder.png",
+        "brand": "Charlotte Folk",
+        "name": "(96) Pants",
+        "price": 620,
+        "category": 0
+}
+
+{
+        "prodID": 2,
+        "image": "/images/products/floralborder.png",
+        "brand": "Charlotte Folk",
+        "name": "Good Times Roll Tee",
+        "price": 620,
+        "category": 2
+}
+
+{
+        "prodID": 3,
+        "image": "/images/products/shortsborder.png",
+        "brand": "Charlotte Folk",
+        "name": "(96) Shorts",
+        "price": 590,
+        "category": 2
+}
+
+READ: all products, and a product by prodID in req.params
+
+UPDATE: update by id (update price by newPrice in req.body)
+{
+    "newPrice": 700
+}
+
+DELETE: delete a user by prodID
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------
+
+NOVEMBER 25, 2022 - ASYNCH
+
+Test:
+    {
+        "identity": "customer",
+        "fullName": "Juan Dela Cruz",
+        "email": "jdc@gmail.com",
+        "phoneNum": "09987654321",
+        "username": "jdchiraya",
+        "password": "jdc123456",
+        "birthday": "2001-12-28",
+        "gender": "male"
+    }
+
+
+Present:
+    HASHING: POST signup --> atlas & console
+    ENCRYPTING: POST signup --> atlas & console --> GET /user/:username route
+

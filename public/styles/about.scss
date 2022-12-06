@@ -1,0 +1,130 @@
+@import "assets";
+
+.side {
+    background-color: $color1;
+    width: 60%;
+    height: 100vh;
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .side {
+        height: 150vh;
+        
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 992px) {
+    .side {
+        height: 150vh;
+    }
+}
+
+.logo2 {
+    margin-top: 2%;
+}
+.about {
+    color: $color3;
+    font-family: $font3;
+    font-size: 60px;
+    margin-top: 32%;
+}
+
+.shortline {
+    padding: 8px;
+    border-bottom: 4px solid $color3;
+    width: 60%;
+}
+
+.contactus {
+    font-family: $font1;
+    color: $color3;
+    font-weight: lighter;
+    margin-top: 10%;
+}
+
+.hiraya-gmail{
+    color: $color3;
+}
+
+.hiraya-gmail:hover{
+    color: $color5;
+}
+
+.findus {
+    font-family: $font1;
+    color: $color3;
+    font-weight: lighter;
+    margin-top: 10%;
+    
+}
+.yt, .twt, .fb, .ig {
+    margin: 10px 5px 0 ;
+}
+
+.desc {
+    color: $color4;
+    padding: 0 20px;
+}
+
+.creators {
+    color: $color1;
+    font-family: $font1;
+    letter-spacing: 2px;
+    color: $color1;
+    font-size: 160%;
+    font-weight: lighter;
+}
+
+.creators-pics-names {
+   display: inline;
+}
+
+.name{
+    font-family: $font1;
+    color: $color1;
+    font-weight: lighter;
+   
+    text-align: center;
+    font-size: 15px;
+}
+
+.featured, .delivery{
+    h3{
+        font-family: $font1;
+        letter-spacing: 2px;
+        color: $color1;
+        font-size: 160%;
+        font-weight: lighter;
+        padding-top: 2%;
+    }
+}
+    
+.featured, .delivery{
+    img{
+        margin-top: 3%;
+    }
+}
+
+.bg {
+    background-color: $color1;
+}
+
+.mobile-about {
+    font-family: $font3;
+    color: $color3;
+    font-size: 25px;
+}
+
+.mobile-contactus {
+    font-family: $font2;
+    color: $color3;
+}
+
+.mobile-findus {
+    font-family: $font2;
+    color: $color3;
+}
+
+.mobile-fb, .mobile-twt, .mobile-ig, .mobile-yt {
+    margin: 10px 5px 0 ;
+}

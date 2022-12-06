@@ -1,0 +1,212 @@
+@import url(c:\Users\athen\OneDrive\Desktop\school\ICS2609\project\new-hiraya\public\styles\fonts.css);
+/*COLOR PALETTE*/
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+button:hover, a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#help img {
+  width: 50px;
+}
+
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav {
+  background-color: #B87D6F;
+}
+
+.nav-categories {
+  font: Neue Einstellung;
+  color: white;
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-header {
+  width: 100%;
+  background-color: #B87D6F;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.ul-toggle {
+  list-style-type: none;
+}
+
+.ul-toggle li {
+  display: inline-block;
+  gap: 20px;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 0;
+  font-family: Neue Montreal;
+}
+
+.nav-link #link {
+  color: #EBE0DD;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.nav-link .active {
+  color: #FFFFFF;
+  background: #C4B0AC;
+  text-decoration: none;
+  padding: 17px;
+  font-family: Neue Montreal;
+  font-size: 120%;
+}
+
+.nav-link #link:hover {
+  color: #FFFFFF;
+}
+
+.nav-search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Neue Montreal;
+  border: none;
+}
+
+.nav-search {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.icons {
+  list-style-type: none;
+}
+
+.icons-navlink {
+  display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  font-family: Neue Einstellung;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #B87D6F;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
+#accDropDown li {
+  color: #B87D6F;
+  font-size: auto;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  font-family: Neue Montreal;
+  padding: 8%;
+  border: none;
+  background-color: #EBE0DD;
+}
+
+.title {
+  font-family: Neue Montreal;
+  font-weight: normal;
+  color: #B87D6F;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 300%;
+}
+
+.q1, .q2, .q3, .q4, .q5 {
+  background-color: #EBE0DD;
+  margin: auto;
+  margin-top: 1%;
+  padding: 1.25%;
+  font-size: 130%;
+  font-family: Neue Einstellung;
+  font-weight: bold;
+}
+
+.q1 p, .q2 p, .q3 p, .q4 p, .q5 p {
+  display: inline;
+  color: #B87D6F;
+}
+
+.q1 .plussign, .q2 .plussign, .q3 .plussign, .q4 .plussign, .q5 .plussign {
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: -1.5%;
+  color: #B87D6F;
+  font-size: 130%;
+}
+
+.q1 .btn:hover, .q1 .btn:focus, .q1 .btn:active, .q1 .btn:active:focus:not(:disabled):not(.disabled), .q1 .btn:focus, .q1 .btn:active, .q1 .btn:hover, .q2 .btn:hover, .q2 .btn:focus, .q2 .btn:active, .q2 .btn:active:focus:not(:disabled):not(.disabled), .q2 .btn:focus, .q2 .btn:active, .q2 .btn:hover, .q3 .btn:hover, .q3 .btn:focus, .q3 .btn:active, .q3 .btn:active:focus:not(:disabled):not(.disabled), .q3 .btn:focus, .q3 .btn:active, .q3 .btn:hover, .q4 .btn:hover, .q4 .btn:focus, .q4 .btn:active, .q4 .btn:active:focus:not(:disabled):not(.disabled), .q4 .btn:focus, .q4 .btn:active, .q4 .btn:hover, .q5 .btn:hover, .q5 .btn:focus, .q5 .btn:active, .q5 .btn:active:focus:not(:disabled):not(.disabled), .q5 .btn:focus, .q5 .btn:active, .q5 .btn:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0;
+}
+
+.q1 .plussign:hover, .q2 .plussign:hover, .q3 .plussign:hover, .q4 .plussign:hover, .q5 .plussign:hover {
+  color: #FFFFFF;
+}
+
+.q1 .plussign:active, .q1 :focus, .q2 .plussign:active, .q2 :focus, .q3 .plussign:active, .q3 :focus, .q4 .plussign:active, .q4 :focus, .q5 .plussign:active, .q5 :focus {
+  color: #C4B0AC;
+}
+
+.q1 #ans1, .q1 #ans2, .q1 #ans3, .q1 #ans4, .q1 #ans5, .q2 #ans1, .q2 #ans2, .q2 #ans3, .q2 #ans4, .q2 #ans5, .q3 #ans1, .q3 #ans2, .q3 #ans3, .q3 #ans4, .q3 #ans5, .q4 #ans1, .q4 #ans2, .q4 #ans3, .q4 #ans4, .q4 #ans5, .q5 #ans1, .q5 #ans2, .q5 #ans3, .q5 #ans4, .q5 #ans5 {
+  display: block;
+  font-family: Neue Montreal;
+  font-weight: lighter;
+  color: #737373;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.q1 {
+  margin-top: 2%;
+}
+
+.q5 {
+  margin-bottom: 2%;
+}
+/*# sourceMappingURL=faqs.css.map */

@@ -1,0 +1,171 @@
+@import url(c:\Users\athen\OneDrive\Desktop\school\ICS2609\project\new-hiraya\public\styles\fonts.css);
+/*COLOR PALETTE*/
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+button:hover, a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#help img {
+  width: 50px;
+}
+
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav {
+  background-color: #B87D6F;
+}
+
+.nav-categories {
+  font: Neue Einstellung;
+  color: white;
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-header {
+  width: 100%;
+  background-color: #B87D6F;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.ul-toggle {
+  list-style-type: none;
+}
+
+.ul-toggle li {
+  display: inline-block;
+  gap: 20px;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 0;
+  font-family: Neue Montreal;
+}
+
+.nav-link #link {
+  color: #EBE0DD;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.nav-link .active {
+  color: #FFFFFF;
+  background: #C4B0AC;
+  text-decoration: none;
+  padding: 17px;
+  font-family: Neue Montreal;
+  font-size: 120%;
+}
+
+.nav-link #link:hover {
+  color: #FFFFFF;
+}
+
+.nav-search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Neue Montreal;
+  border: none;
+}
+
+.nav-search {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.icons {
+  list-style-type: none;
+}
+
+.icons-navlink {
+  display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  font-family: Neue Einstellung;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #B87D6F;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
+#accDropDown li {
+  color: #B87D6F;
+  font-size: auto;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  font-family: Neue Montreal;
+  padding: 8%;
+  border: none;
+  background-color: #EBE0DD;
+}
+
+#error-404 {
+  font-family: Neue Einstellung;
+  font-size: 800%;
+  font-weight: bolder;
+  color: #B87D6F;
+  margin-top: 10%;
+  text-align: center;
+}
+
+#not-found {
+  font-family: Neue Einstellung;
+  color: #B87D6F;
+  font-size: 200%;
+  text-align: center;
+}
+
+#went-wrong {
+  font-family: Neue Einstellung;
+  color: #B87D6F;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 10%;
+}
+/*# sourceMappingURL=not-found.css.map */

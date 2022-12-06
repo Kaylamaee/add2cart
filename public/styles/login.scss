@@ -1,0 +1,68 @@
+@import 'assets';
+
+.title{
+    text-align: center;
+    font-family: $font1;
+    font-size: 250%;
+    color: $color1;
+    padding: 3%;
+    border-bottom: 1.5px solid $color5;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 100px auto;
+    
+  }
+  
+  .wrapper .log-in-form {
+    width: 100%;
+  }
+   
+  .wrapper .log-in-form .inputfield {
+    margin-bottom: 20px;
+    align-items: center;
+  
+  }
+  
+  .wrapper .log-in-form .inputfield {
+      #username-label-login, #password-label-login{
+        width: 250px;
+        font-family: $font1;
+        font-weight: lighter;
+        font-size: 110%;
+      }
+  }
+  
+  .wrapper .log-in-form .inputfield {
+      #username-login, #password-login{
+        outline: none;
+        background-color: $color2;
+        border: 1px solid $color2;
+        padding: 2px;
+        font-family: $font2;
+      }
+  }
+  
+  .wrapper .log-in-form .inputfield {
+    .login-btn{
+        font-family: $font1;
+        font-weight: lighter;
+        color: $color3;
+        background-color: $color1;
+        padding: 2px 10px;
+        border-radius: 0px;
+    }
+    
+  }
+
+.create-acc{
+  font-family: $font1;
+  a{
+    color: $color1;
+  }
+  a:hover{
+    color: $color5;
+  }
+
+}

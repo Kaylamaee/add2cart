@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRAYA | MY ACCOUNT</title>
+    <link rel="stylesheet" href="/styles/my-acc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="header"><%- include('./partials/navbar.ejs')%></div>
+
+    <div class="my-acc-wrapper container-fluid">
+        <div class="profile"><%- include('./partials/my-acc-profile.ejs')%></div>
+        <div class="acc-header"><%- include('./partials/my-acc-header.ejs')%></div>
+
+            <div class="row">
+                <div class="col-3 sidebar my-auto">
+                    <aside class = "d-none d-md-block ">
+                        <ul>
+                            <li class="second"><a href="/my-account" class="aside-link">Personal Information</a></li>
+                            <li><a href="/security" class="aside-link">Security and Login</a></li>
+                            <li><a href="/" class="aside-link">Logout</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-12">
+                    <div class=" text-center">
+                        <input type="file" name="image" id="image-upload" accept="image/*" />
+                            <div id="preview">
+                                <div class="text-center"></div>
+                                <label for="input" class="image-upload mx-auto" id="add-avatar-label">Change your avatar</label>  
+                            </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6 col-md-7 my-5">
+                    <form class="edit-user-form row" action='/user/editDetails' method="POST">
+                        <div class="my-acc-details d-none d-md-block ">
+        
+                            <div class="row pt-3">
+                                <label class='col-sm-4 px-5 my-auto text-end edit-detail-label' for="fullName">Full Name</label>
+                                <input class='input-details col-sm-6' id="edit-name" type="text" placeholder="Enter Full Name" name="fullName" required />
+                            </div>
+        
+                            <div class="row pt-3">
+                                <label class='col-sm-4 px-5 my-auto text-end edit-detail-label' for="username">Username</label>
+                                <input class='input-details col-sm-6' id="edit-uname" type="text" placeholder="Enter Username" style="direction: ltr" name="username" minlength="5" maxlength="12" required />
+                            </div>
+                            
+                            <div class="row pt-3">
+                                <label class='col-sm-4 px-5 my-auto text-end edit-detail-label' for="phoneNum">Phone Number</label>
+                                <input class='input-details col-sm-6' id="edit-phone" type="tel" placeholder="Enter Phone Number" name="phoneNum" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required/>
+                            </div>  
+                            
+                            <div class="row pt-3">
+                                <label class='col-sm-4 px-5 my-auto text-end edit-detail-label' for="email">Email</label>
+                                <input class='input-details col-sm-6' id="edit-email" type="email" placeholder="Enter Email" name="email" required />
+                            </div>                          
+                            
+                            <div class="row pt-3">
+                                <label class='col-sm-4 px-5 my-auto text-end edit-detail-label' for="birthday">Birthday</label>
+                                <input class='input-details col-sm-6' id="edit-birthday" type="date" name="birthday" required/> 
+                            </div>
+                            
+                            <div class="row pt-3">
+                                <label class="col-sm-4 px-5 my-auto text-end edit-detail-label" for="gender">Gender</label>
+                                <span id="edit-gender-span" class="col-sm-6 my-auto">
+                                    <select class="form-group gender-select input-details" name="gender" required>
+                                        <option defaultValue="gender" style="color: #808080">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                            <div class="row pt-3 justify-content-center text-end mt-3">
+                                <div class="col-lg-5 col-md-6">
+                                <button type="submit" class="save-changes-btn">SAVE CHANGES</button>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id = "help"><a href='/faqs'><img src = '/images/icons/questionmark.png' alt="help"/></a></div>
+
+    </div>
+
+</body>
+</html>

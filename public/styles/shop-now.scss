@@ -1,0 +1,70 @@
+@import 'assets';
+
+.products {
+    #trending {
+        padding-top: 5%;
+        font-family: $font1;
+        text-align: center;
+        color: $color1;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 300%;
+    }
+
+    .trending-img {
+        padding-top: 5%;
+      }
+}
+  
+#prodhome-divider {
+    padding:2px;   
+    position: relative;
+    bottom: -30px;
+}
+
+
+.category{
+    padding-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+    font-weight: lighter;
+
+    .category-title {
+        padding-top: 2%;
+        font-family: $font1;
+        text-align: center;
+        color: $color1;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    .hanger {
+        padding-top: 5%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .prod-category{
+        text-decoration: none;
+
+        .name{
+            font-family: $font1;
+            letter-spacing: 0.05em;
+            font-weight: lighter;
+            font-size: 110%;
+            color: $color1;
+            margin-top: -5%;
+        }
+        
+        .name:hover{
+            color: $color5;
+        }
+
+        .hanger{
+            width: 170px;
+            height: 160px;
+        }
+    }
+}

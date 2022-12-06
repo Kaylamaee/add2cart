@@ -1,0 +1,56 @@
+<div class = "nav">
+    <section class = "bg-header container-fluid">
+        <div class = "container-fluid">
+            <nav class = "navbar navbar-expand-md navbar-light">
+                <div class = "container-fluid">
+                    <NavLink to="/" class='logo'>
+                        <a href="/"><img src='/images/icons/logo.png' alt="HOME" width="100"></img></a>
+                    </NavLink>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-1 mb-lg-0 text-center nav-categories">
+                           <li class="nav-link col-5"><a href="/women" id="link">WOMEN</a></li>
+                           <li class="nav-link col-5"><a href="/men" id="link">MEN</a></li>
+                           <li class="nav-link col-5"><a href="/about" id="link">ABOUT</a></li>
+                        </ul>
+
+                        <form class="d-flex navbar-search me-auto" method="POST">
+                          <input class="form-control me-2 nav-search" name='search' id='search' type='search' placeholder="Search" aria-label="Search" size="50" />
+                        </form>
+
+                        <ul class = "navbar-nav icons text-center">
+                            <li>
+                                <span class='dropdown pull-right acc-nav-list text-center '>
+                                    <span  type="button" 
+                                            id="accDropDown" 
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class='dropdown-img'>
+                                            <img src="/images/icons/acc.png" alt="Account" width="40"></img>
+                                    </span>
+                                        <ul class="dropdown-menu" aria-labelledby="accDropDown">
+                                            <a href="/user/login" class='dropdown-item'>Log In</a>
+                                            <!-- <a href="/likes" class='dropdown-item'>Likes</a> -->
+                                            <a href="/my-account" class='dropdown-item'>My Account</a>
+                                            <!-- <a href="/recently-viewed" class='dropdown-item'>Recently Viewed</a> -->
+                                            <!-- <a href="/user/security/" class='dropdown-item'>Security and Login</a> -->
+                                        </ul>
+                                </span>
+                            </li>
+                            <!-- <li class='my-auto me-2'><a href="/user/my-account"><img src="/images/icons/acc.png" alt="My Account" width="40"></a></li> -->
+                            <li class='my-auto me-2'><a href="/my-cart"><img src="/images/icons/cart.png" alt="My Cart" width="40"></a></li>
+                            <li class='my-auto me-2'><a href="/chat"><img src="/images/icons/chat.png" alt="Chat" width="40"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+</div>
+<script>
+    
+</script>

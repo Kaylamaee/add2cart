@@ -1,0 +1,271 @@
+@import url(c:\Users\athen\OneDrive\Desktop\school\ICS2609\project\new-hiraya\public\styles\fonts.css);
+/*COLOR PALETTE*/
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+button:hover, a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#help img {
+  width: 50px;
+}
+
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav {
+  background-color: #B87D6F;
+}
+
+.nav-categories {
+  font: Neue Einstellung;
+  color: white;
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-header {
+  width: 100%;
+  background-color: #B87D6F;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.ul-toggle {
+  list-style-type: none;
+}
+
+.ul-toggle li {
+  display: inline-block;
+  gap: 20px;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 0;
+  font-family: Neue Montreal;
+}
+
+.nav-link #link {
+  color: #EBE0DD;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.nav-link .active {
+  color: #FFFFFF;
+  background: #C4B0AC;
+  text-decoration: none;
+  padding: 17px;
+  font-family: Neue Montreal;
+  font-size: 120%;
+}
+
+.nav-link #link:hover {
+  color: #FFFFFF;
+}
+
+.nav-search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Neue Montreal;
+  border: none;
+}
+
+.nav-search {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.icons {
+  list-style-type: none;
+}
+
+.icons-navlink {
+  display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  font-family: Neue Einstellung;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #B87D6F;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
+#accDropDown li {
+  color: #B87D6F;
+  font-size: auto;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  font-family: Neue Montreal;
+  padding: 8%;
+  border: none;
+  background-color: #EBE0DD;
+}
+
+.side {
+  background-color: #B87D6F;
+  width: 60%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .side {
+    height: 150vh;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 992px) {
+  .side {
+    height: 150vh;
+  }
+}
+
+.logo2 {
+  margin-top: 2%;
+}
+
+.about {
+  color: #FFFFFF;
+  font-family: Maharlika;
+  font-size: 60px;
+  margin-top: 32%;
+}
+
+.shortline {
+  padding: 8px;
+  border-bottom: 4px solid #FFFFFF;
+  width: 60%;
+}
+
+.contactus {
+  font-family: Neue Montreal;
+  color: #FFFFFF;
+  font-weight: lighter;
+  margin-top: 10%;
+}
+
+.hiraya-gmail {
+  color: #FFFFFF;
+}
+
+.hiraya-gmail:hover {
+  color: #C4B0AC;
+}
+
+.findus {
+  font-family: Neue Montreal;
+  color: #FFFFFF;
+  font-weight: lighter;
+  margin-top: 10%;
+}
+
+.yt, .twt, .fb, .ig {
+  margin: 10px 5px 0;
+}
+
+.desc {
+  color: #737373;
+  padding: 0 20px;
+}
+
+.creators {
+  color: #B87D6F;
+  font-family: Neue Montreal;
+  letter-spacing: 2px;
+  color: #B87D6F;
+  font-size: 160%;
+  font-weight: lighter;
+}
+
+.creators-pics-names {
+  display: inline;
+}
+
+.name {
+  font-family: Neue Montreal;
+  color: #B87D6F;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 15px;
+}
+
+.featured h3, .delivery h3 {
+  font-family: Neue Montreal;
+  letter-spacing: 2px;
+  color: #B87D6F;
+  font-size: 160%;
+  font-weight: lighter;
+  padding-top: 2%;
+}
+
+.featured img, .delivery img {
+  margin-top: 3%;
+}
+
+.bg {
+  background-color: #B87D6F;
+}
+
+.mobile-about {
+  font-family: Maharlika;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.mobile-contactus {
+  font-family: Neue Einstellung;
+  color: #FFFFFF;
+}
+
+.mobile-findus {
+  font-family: Neue Einstellung;
+  color: #FFFFFF;
+}
+
+.mobile-fb, .mobile-twt, .mobile-ig, .mobile-yt {
+  margin: 10px 5px 0;
+}
+/*# sourceMappingURL=about.css.map */

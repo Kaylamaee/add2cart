@@ -1,0 +1,250 @@
+@import url(c:\Users\athen\OneDrive\Desktop\school\ICS2609\project\new-hiraya\public\styles\fonts.css);
+/*COLOR PALETTE*/
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+button:hover, a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#help img {
+  width: 50px;
+}
+
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav {
+  background-color: #B87D6F;
+}
+
+.nav-categories {
+  font: Neue Einstellung;
+  color: white;
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-header {
+  width: 100%;
+  background-color: #B87D6F;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.ul-toggle {
+  list-style-type: none;
+}
+
+.ul-toggle li {
+  display: inline-block;
+  gap: 20px;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 0;
+  font-family: Neue Montreal;
+}
+
+.nav-link #link {
+  color: #EBE0DD;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.nav-link .active {
+  color: #FFFFFF;
+  background: #C4B0AC;
+  text-decoration: none;
+  padding: 17px;
+  font-family: Neue Montreal;
+  font-size: 120%;
+}
+
+.nav-link #link:hover {
+  color: #FFFFFF;
+}
+
+.nav-search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Neue Montreal;
+  border: none;
+}
+
+.nav-search {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.icons {
+  list-style-type: none;
+}
+
+.icons-navlink {
+  display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  font-family: Neue Einstellung;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #B87D6F;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
+#accDropDown li {
+  color: #B87D6F;
+  font-size: auto;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  font-family: Neue Montreal;
+  padding: 8%;
+  border: none;
+  background-color: #EBE0DD;
+}
+
+#top-divider, #bottom-divider {
+  border: 1px solid #C4B0AC;
+  opacity: 100;
+  background-color: #C4B0AC;
+}
+
+#top-divider {
+  margin-top: 4%;
+}
+
+.product-desc {
+  padding-bottom: 5%;
+}
+
+.product-desc #prod-brand {
+  font-family: Neue Montreal;
+  font-size: 325%;
+  color: #B87D6F;
+  margin-bottom: -0.30%;
+  font-weight: bolder;
+  letter-spacing: 0.02em;
+}
+
+.product-desc #prod-name {
+  font-family: Neue Einstellung;
+  font-weight: lighter;
+  color: #B87D6F;
+  font-size: 225%;
+}
+
+.product-desc #prod-price {
+  font-family: Neue Einstellung;
+  color: #C4B0AC;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top: 1.5%;
+}
+
+.product-desc .size-quantity {
+  margin-top: 10%;
+  font-family: Neue Einstellung;
+  color: #545454;
+}
+
+.product-desc .size-quantity h3 {
+  font-weight: lighter;
+  vertical-align: middle;
+}
+
+.product-desc .size-quantity h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.product-desc .size-quantity button {
+  all: unset;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.product-desc .size-quantity #s-prev, .product-desc .size-quantity #q-less {
+  float: right;
+}
+
+.cart-buy {
+  padding-top: 10%;
+}
+
+.cart-buy button {
+  all: unset;
+  cursor: pointer;
+}
+
+.cart-buy #add-cart, .cart-buy #buy-now {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  font-size: 120%;
+  color: #FFFFFF;
+  background-color: #B87D6F;
+  padding: 3.5% 8%;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.cart-buy #buy-now {
+  padding: 3.5% 18%;
+}
+
+.cart-buy .buy-now {
+  text-decoration: none;
+}
+
+.cart-buy #add-cart:hover, .cart-buy #buy-now:hover {
+  background-color: #EBE0DD;
+  color: #B87D6F;
+}
+
+.cart-buy #add-cart:active, .cart-buy #buy-now:active {
+  background-color: #C4B0AC;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=prod-view.css.map */

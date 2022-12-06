@@ -1,0 +1,189 @@
+@import 'assets';
+
+.my-acc-details{
+
+    .edit-detail-label{
+        font-family: $font1;
+        font-weight: lighter;
+    }
+}
+
+.input-details{
+    border: none;
+    font-family: $font2;
+    background-color: $color2;
+}
+
+.input-details:focus{
+    outline: 1px solid $color1;
+    border-radius: 5px;
+}
+
+.input-details::placeholder{
+    font-family: $font2;
+    opacity: 100%;
+    color: $color9;
+}
+
+.input-details:hover{
+    outline: 1px solid $color5;
+    border-radius: 5px;
+}
+
+.save-changes-btn{
+    margin: 3%;
+    margin-right: 20%;
+    font-family: $font1;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    background-color: $color1;
+    border: none;
+    color: $color3;
+    padding: 1% 3%;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    font-size: 110%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.save-changes-btn:hover{
+    background-color: $color5;
+    color: $color3;
+}
+
+.details-mobile{
+    font-family: $font1;
+    font-weight: lighter;
+    text-align: right;
+}
+
+p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#name{
+    font-family: $font1;
+    font-size: 170%;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+
+#username{
+    font-family: $font2;
+    font-size: 110%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabs {
+    margin-top: 20%;
+    font-family: $font1;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.inactive-header-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: $color9;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.inactive-header-link:hover{
+    color: $color2;
+}
+
+.active-header-link{
+    text-decoration: none;
+    font-weight: lighter;
+    color: $color3;
+    font-size: 20px;
+    background-color: $color1;
+    font-size: 120%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#leftsubnav:hover, #rightsubnav:hover{
+    color: $color2;
+    cursor: pointer;
+}
+
+.line {
+    padding: 8px;
+    border-bottom: 1px solid $color5;
+}
+
+.sidebar {
+    border-right: 1px solid $color5;
+    padding-right: 40px;
+
+
+    ul{
+        list-style: none;
+        text-align: center;
+
+        li{
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        a{
+            text-decoration: none;
+            color: $color9;
+            font-family: $font1;
+            font-weight: lighter;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        a:hover {
+            color: $color1;
+          }
+    }
+
+}
+.first a {
+    background-color: $color2;
+  }
+
+.sidebar a:hover {
+    color: $color1;
+  }
+
+.inputfield label{
+    margin-bottom: 20px;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.inputfield {
+    #new-pass-label, #cnfm-pass-label{
+        width: 250px;
+        font-family: $font1;
+        font-weight: lighter;
+    }
+}
+
+.inputfield {
+    #password1, #password2{
+      outline: none;
+      background-color: $color2;
+      border: 1px solid $color2;
+      padding: 2px;
+      font-family: $font2;
+    }
+}
+
+h4{
+    font-family: $font1;
+    font-weight: lighter;
+}

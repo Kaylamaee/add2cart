@@ -1,0 +1,102 @@
+@import 'assets';
+
+html{
+	scroll-behavior: smooth;
+    overflow: auto;
+}
+
+#decologo {
+    display:block;
+    margin-top: 20px;
+    margin-left: auto;  
+    margin-right: auto;  
+    width: 200px;
+    height: 100px;
+
+  }
+
+#banner {
+    display:flex;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.shop {  
+    width: 300px;  
+    height: 150px;   
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+
+    #shopnow { 
+        border: none;
+        border-radius: 40px;
+    
+        background-color: $color1;
+        color: $color3;
+        padding: 16px 32px;
+        margin: auto;
+    
+        text-align: center;
+        text-decoration: none;
+    
+        display: inline-block;
+        font-size: 20px;
+    
+        cursor: pointer
+    }
+    
+    #shopnow:hover{
+        background-color: $color2;
+        color: $color1;
+    }
+}  
+
+#para1 {
+    display: center;
+    width:100%;
+    text-align:center;
+    font-size: 26px;
+    font-family: $font1;
+    letter-spacing: 0.1em;
+    color: $color1;
+    padding-right: 0;
+}
+
+
+.brand-name{
+    text-align: center;
+    font-family: $font1;
+    letter-spacing: 0.05em;
+    color: $color7;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 120%;
+}
+
+.footer {
+        
+    p{
+        color: $color3;
+        display: inline-block; 
+        font-family: $font1;
+        letter-spacing: 0.1em;
+        font-size: 120%;
+        padding-top: 1%;
+        margin-left: 3%;
+    }
+    
+
+    .footer-content{
+        padding-top: 1%;
+        background-color: $color5;
+    }
+    
+    .socmeds {
+        padding: 0.5%;
+        width: 5%;
+        margin-right: 1%;
+    } 
+}

@@ -1,0 +1,25 @@
+@import 'assets';
+
+#error-404{
+    font-family: $font2;
+    font-size: 800%;
+    font-weight: bolder;
+    color: $color1;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#not-found{
+    font-family: $font2;
+    color: $color1;
+    font-size: 200%;
+    text-align: center;
+}
+
+#went-wrong{
+    font-family: $font2;
+    color: $color1;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 10%;
+}

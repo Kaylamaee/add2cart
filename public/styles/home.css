@@ -1,0 +1,246 @@
+@import url(c:\Users\athen\OneDrive\Desktop\school\ICS2609\project\new-hiraya\public\styles\fonts.css);
+/*COLOR PALETTE*/
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+button:hover, a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#help img {
+  width: 50px;
+}
+
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav {
+  background-color: #B87D6F;
+}
+
+.nav-categories {
+  font: Neue Einstellung;
+  color: white;
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-header {
+  width: 100%;
+  background-color: #B87D6F;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.ul-toggle {
+  list-style-type: none;
+}
+
+.ul-toggle li {
+  display: inline-block;
+  gap: 20px;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 0;
+  font-family: Neue Montreal;
+}
+
+.nav-link #link {
+  color: #EBE0DD;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.nav-link .active {
+  color: #FFFFFF;
+  background: #C4B0AC;
+  text-decoration: none;
+  padding: 17px;
+  font-family: Neue Montreal;
+  font-size: 120%;
+}
+
+.nav-link #link:hover {
+  color: #FFFFFF;
+}
+
+.nav-search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Neue Montreal;
+  border: none;
+}
+
+.nav-search {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.icons {
+  list-style-type: none;
+}
+
+.icons-navlink {
+  display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  font-family: Neue Einstellung;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #B87D6F;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
+#accDropDown li {
+  color: #B87D6F;
+  font-size: auto;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  font-family: Neue Montreal;
+  padding: 8%;
+  border: none;
+  background-color: #EBE0DD;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+#decologo {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 100px;
+}
+
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop {
+  width: 300px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop #shopnow {
+  border: none;
+  border-radius: 40px;
+  background-color: #B87D6F;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.shop #shopnow:hover {
+  background-color: #EBE0DD;
+  color: #B87D6F;
+}
+
+#para1 {
+  display: center;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-family: Neue Montreal;
+  letter-spacing: 0.1em;
+  color: #B87D6F;
+  padding-right: 0;
+}
+
+.brand-name {
+  text-align: center;
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  color: #A6A6A6;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  font-size: 120%;
+}
+
+.footer p {
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: Neue Montreal;
+  letter-spacing: 0.1em;
+  font-size: 120%;
+  padding-top: 1%;
+  margin-left: 3%;
+}
+
+.footer .footer-content {
+  padding-top: 1%;
+  background-color: #C4B0AC;
+}
+
+.footer .socmeds {
+  padding: 0.5%;
+  width: 5%;
+  margin-right: 1%;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,49 @@
+use hiraya
+
+// CREATE USER - Assigned: Ochengco, Reporter: Ochengco
+db.createUser({
+	user: "user",
+	pwd: "admin",
+	roles: [{role: "readWrite", db: "hiraya"}]
+  })
+
+// CREATE COLLECTION - Assigned: Ochengco, Reporter: Ochengco
+db.createCollection("Products")
+
+
+// CREATE PRODUCT - Assigned: Paredes, Reporter: Ochengco
+db.Products.insertMany([
+  {
+	"prodID": 1, 
+	"image": "/images/products/pantsborder.png", 
+	"brand": "Charlotte Folk", 
+	"Price": 620,
+	"category": {
+		"categoryID": 0,
+		"categoryName": "Womens"
+      }
+  }, {
+	"prodID": 2, 
+	"image": "/images/products/floralborder.png", 
+	"brand": "Charlotte Folk", 
+	"Price": 620,
+	"category": {
+		"categoryID": 2,
+		"categoryName": "Womens"
+      }
+  }])
+
+
+// READING - Assigned: Ochengco, Reporter: Ochengco
+db.Products.find({"brand": "Charlotte Folk"})
+db.Products.find({"prodID": 2})
+
+
+// UPDATING - Assigned: Patricio, Reporter: Mendoza
+db.Products.update({"prodID": 1}, { $set: {"Price": 700}})
+
+
+//DELETE - Assigned: Mendoza, Reporter: Mendoza
+db.Products.deleteOne(
+    { "prodID": 1 }
+)

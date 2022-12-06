@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRAYA | PRODUCTS</title>
+    <link rel="stylesheet" type="text/css" href="/styles/prod-view.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+    <div class="header"><%- include('./partials/navbar.ejs')%></div>
+
+    <div class='container-fluid product-view-main'>
+        <hr id="top-divider" />
+
+        <div class='product-wrapper row'>
+            <div class="col-lg-6 col-md-5 col-sm-9 col-9 my-auto text-end product-pic">
+                <img src="<%=prod.imageURL%>" alt="<%=prod.name%>" style="width: 60%;" />
+            </div>
+
+            <div class="product-desc col-lg-5 col-md-7 col-sm-12">
+
+                <div class="row justify-content-center"><div class="col-lg-12 col-md-12 col-sm-6 col-8"><h1 id="prod-brand"><%=prod.brand%></h1></div></div>
+                <div class="row justify-content-center"><div class="col-lg-12 col-md-12 col-sm-6 col-8"><h2 id="prod-name"><%=prod.name%></h2></div></div>
+                <div class="row justify-content-center"><div class="col-lg-12 col-md-12 col-sm-6 col-8"><h3 id="prod-price">P <%=prod.price%></h3></div></div>
+
+                <div class='row size-quantity'>
+                    <div class='row size justify-content-center'>
+                        <h3 class='col-lg-4 col-md-4 col-sm-3 col-4'>Size: </h3>
+                        <span class='col-lg-1 col-md-2 col-sm-1 col-2 ms-3 my-auto'>
+                            <button type="button" onclick="decreaseSize()" id="s-prev"><img src="/images/icons/less-prev.png" alt="Prev" style="width: 30px"></button>
+                        </span>
+                        <h4 class='col-lg-1 col-md-1 col-sm-1 col-1 my-auto' id="size-value">S</h4>
+                        <span class='col-lg-5 col-md-2 col-sm-1 col-1 my-auto'>
+                            <button type="button" onclick="increaseSize()" id="s-next"><img src="/images/icons/more-next.png" alt="Next" style="width: 30px"></button>
+                        </span>
+                    </div>
+
+                    <div class='row quantity justify-content-center'>
+                        <h3 class='col-lg-4 col-md-4 col-sm-3 col-4'>Quantity: </h3>
+                        <span class='col-lg-1 col-md-2 col-sm-1 col-2 ms-3 my-auto'>
+                            <button type="button" onclick="decreaseQuantity()" id="q-less"><img src="/images/icons/less-prev.png" alt="Less" style="width: 30px"></button>
+                        </span>
+                        <h4 class='col-lg-1 col-md-1 col-sm-1 col-1 my-auto' id="quantity-value">1</h4>
+                        <span class='col-lg-5 col-md-2 col-sm-1 col-1 my-auto'>
+                            <button type="button" onclick="increaseQuantity()" id="q-more"><img src="/images/icons/more-next.png" alt="More" style="width: 30px"></button>
+                        </span>
+                    </div>
+                </div>
+                <div class='cart-buy row justify-content-center text-center'>
+                    <form action="/add-to-cart" method="POST">
+                        <input type="hidden" name="id" value="<%=p.id%>">
+                    <span class='col-5 col-md-5 col-sm-3'><button onclick="clickCart()" id="add-cart">ADD TO CART</button></span>
+                    <a href='/checkout' class='col-5 col-md-5 col-sm-3 buy-now'>
+                        <span><button id="buy-now">BUY NOW</button></span>
+                    </a>
+                    </form>
+                </div>
+            </div>
+
+            <hr id="bottom-divider" />
+        </div>
+    </div>
+    
+    <script>
+        var sizes = ["S", "M", "L", "XL"];
+        var sizePos = 0;
+        var quantity = 1;
+        
+        function clickCart() {
+            alert("Added <%=prod.name%> to Cart");
+            document.getElementById('size-value').innerHTML = "S";
+            document.getElementById('quantity-value').innerHTML = 1;
+        }
+       
+        function increaseSize() {
+            var currentSize;
+            if (sizePos >= 3) {
+                sizePos = 0;
+                currentSize = document.getElementById('size-value');
+                currentSize.innerHTML = sizes[sizePos];
+            }
+            else {
+                sizePos++;
+                currentSize = document.getElementById('size-value');
+                currentSize.innerHTML = sizes[sizePos];
+            }
+        }
+    
+        function decreaseSize() {
+            var currentSize;
+            if (sizePos <= 0) {
+                sizePos = 3;
+                currentSize = document.getElementById('size-value');
+                currentSize.innerHTML = sizes[sizePos];
+            }
+            else {
+                sizePos--;
+                currentSize = document.getElementById('size-value');
+                currentSize.innerHTML = sizes[sizePos];
+            }
+        }
+    
+        function increaseQuantity() {
+            quantity++;
+            if (quantity === 16) {
+                console.log("Quantity Limit Reached");
+                quantity--;
+            }
+            else {
+                var quantityElement = document.getElementById('quantity-value');
+                quantityElement.textContent = quantity;
+            }
+        }
+    
+        function decreaseQuantity() {
+            quantity--;
+            if (quantity === 0) {
+                console.log("Invalid Quantity");
+                quantity++;
+            }
+            else {
+                var quantityElement = document.getElementById('quantity-value');
+                quantityElement.textContent = quantity;
+            }
+        }
+    </script>
+
+</body>
+</html>

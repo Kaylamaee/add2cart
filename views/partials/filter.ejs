@@ -1,0 +1,65 @@
+<div class="row justify-content-center">
+    <div class="filter col-lg-2 col-md-4 col-sm-6">
+        <div class="row">
+            <div class="filter-by col-lg-9 col-md-9 col-sm-12 text-center">FILTER BY</div>
+        </div>
+        <div class="row my-2"></div>
+        <div class="row show">
+            <div class="btn-group dropdown brands-filter col-9 mb-3" role="group">
+                <button class="dropdown-toggle" type="button" id="btnGroupDrop1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <%=brand%>
+                </button>
+            
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a href="/<%=route%>/Charlotte Folk" class="dropdown-item">Charlotte Folk</a></li>
+                    <li><a href="/<%=route%>/Homeland" class="dropdown-item">Homeland</a></li>
+                    <li><a href="/<%=route%>/Essentiel MNL" class="dropdown-item">Essentiel MNL</a></li>
+                    <li><a href="/<%=route%>" class="dropdown-item">All Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="women-clothing-wrapper ms-4 col-lg-9 col-md-12">
+        <div class='product row justify-content-center'>
+
+            <%# Object.entries(data).forEach(([key, value]) => { %>
+            <% for(let p of prod) {%>
+                <div class="col-4 cards">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="/product/<%=p._id%>"><img class="mx-auto" src="<%=p.imageURL%>" alt="<%=p.name%>" id="prod-list-img" style="width: 80%;"></a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <p><%= p.name%></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <span class="col-2">
+                            <div class="heart">
+                                <img src=/images/icons/heart.png onclick="likeProd()" alt="liked" style="width: 25px; height: 25px; cursor: pointer;" id='like'>
+                            </div>
+                        </span>
+                        <p class="col-4"><%= p.price%></p>
+                    </div>
+                </div>
+            <% } %>
+            <%# }) %>
+            
+        </div>
+    </div>
+</div>
+<script>
+    let isLiked = false;
+
+    function likeProd(){
+        (!isLiked) ? (
+            console.log("liked"),
+            document.getElementById('like').src = "/images/icons/liked.png",
+            isLiked = true
+        ) : (
+            console.log("unliked"),
+            document.getElementById('like').src = "/images/icons/heart.png",
+            isLiked = false
+        )
+    }
+</script>

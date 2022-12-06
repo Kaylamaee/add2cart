@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRAYA | LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="/styles/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="header"><%- include('./partials/navbar.ejs')%></div>
+
+    <div class="login-wrapper container-fluid">
+        <div class="title row"> <p> Log In to your Account</p> </div>
+
+        <div class = "wrapper text-center ms-auto">
+            <form class = "log-in-form" action="/user/login" method="POST">
+                <div class = "inputfield">
+                    <label for = "username" id="username-label-login">Username</label>
+                    <input type="text" class = "input" id = "username-login" name="username" required/>
+                </div>
+                
+                <div class = "inputfield">
+                    <label for = "password" id="password-label-login">Password</label>
+                    <input type="password" class = "input" id = "password-login" name="password" required/>
+                </div>
+                    
+                <div class = "inputfield">
+                    <label></label>
+                    <button type="submit" class = "btn login-btn" id = "myBtn" >LOG IN</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row position-relative bottom-0 justify-content-center pb-5">
+            <div class="col-12 text-center">
+                <span class="create-acc">Don't have an account yet? <a href="/user/signup">Create an account</a>.</span>
+            </div>
+        </div>
+
+        <div id = "help"><a href='/faqs'><img src = '/images/icons/questionmark.png' alt="help"/></a></div>
+
+    </div>
+</body>
+</html>

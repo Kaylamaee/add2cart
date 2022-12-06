@@ -1,0 +1,218 @@
+{
+    "p1" : {
+        "id": 1,
+        "image": "/images/products/pantsborder.png",
+        "brand": "Charlotte Folk",
+        "name": "(96) Pants",
+        "price": 620,
+        "category": 0
+    },
+
+    "p2" :{
+        "id": 2,
+        "image": "/images/products/floralborder.png",
+        "brand": "Charlotte Folk",
+        "name": "Good Times Roll Tee",
+        "price": 620,
+        "category": 2
+    },
+    
+    "p3" :{
+        "id": 3,
+        "image": "/images/products/shortsborder.png",
+        "brand": "Charlotte Folk",
+        "name": "(96) Shorts",
+        "price": 590,
+        "category": 2
+    },
+    
+    "p4" :{
+        "id": 4,
+        "image": "/images/products/hoodieborder.png",
+        "brand": "Charlotte Folk",
+        "name": "CF2018 Sweater",
+        "price": 1090,
+        "category": 2
+    },
+    
+    "p5" :{
+        "id": 5,
+        "image": "/images/products/shirtborder.png",
+        "brand": "Charlotte Folk",
+        "name": "CF Tee",
+        "price": 790,
+        "category": 2
+    },
+    
+    "p6" :{
+        "id": 6,
+        "image": "/images/products/blue.png",
+        "brand": "Charlotte Folk",
+        "name": "Folk Club 2021 Sweater",
+        "price": 990,
+        "category": 2
+    },
+    
+    "p7" :{
+        "id": 7,
+        "image": "/images/products/gray.png",
+        "brand": "Charlotte Folk",
+        "name": "EG Sweatshirt",
+        "price": 1190,
+        "category": 2
+    },
+    
+    "p8" :{
+        "id": 8,
+        "image": "/images/products/CH.png",
+        "brand": "Charlotte Folk",
+        "name": "(96) Cropped Hoodie",
+        "price": 750,
+        "category": 0
+    },
+    
+    "p9" :{
+        "id": 9,
+        "image": "/images/products/EM1.png",
+        "brand": "Essentiel MNL",
+        "name": "High Waist Wide Leg Trouser",
+        "price": 310,
+        "category": 0
+    },
+    
+    "p10" :{
+        "id": 10,
+        "image": "/images/products/EM2.png",
+        "brand": "Essentiel MNL",
+        "name": "High Waist Cozy Shorts",
+        "price": 179,
+        "category": 0
+    },
+    
+    "p11" :{
+        "id": 11,
+        "image": "/images/products/EM3.png",
+        "brand": "Essentiel MNL",
+        "name": "Button-down Layered Dress",
+        "price": 369,
+        "category": 0
+    },
+    
+    "p12" :{
+        "id": 12,
+        "image": "/images/products/EM4.png",
+        "brand": "Essentiel MNL",
+        "name": "Backless Halter Dress",
+        "price": 350,
+        "category": 0
+    },
+    
+    "p13" :{
+        "id": 13,
+        "image": "/images/products/EM5.png",
+        "brand": "Essentiel MNL",
+        "name": "Cool Linen Set",
+        "price": 369,
+        "category": 0
+    },
+    
+    "p14" :{
+        "id": 14,
+        "image": "/images/products/EM6.png",
+        "brand": "Essentiel MNL",
+        "name": "Puff Sleeves Bustier Maxi Dress",
+        "price": 399,
+        "category": 0
+    },
+    
+    "p15" :{
+        "id": 15,
+        "image": "/images/products/EM7.png",
+        "brand": "Essentiel MNL",
+        "name": "Linen Summer Set",
+        "price": 319,
+        "category": 0
+    },
+    
+    "p16" :{
+        "id": 16,
+        "image": "/images/products/EM8.png",
+        "brand": "Essentiel MNL",
+        "name": "Cozy Basic Set",
+        "price": 191,
+        "category": 0
+    },
+    
+    "p17" :{
+        "id": 17,
+        "image": "/images/products/HM1.png",
+        "brand": "Homeland",
+        "name": "World Betterment - Oat beige",
+        "price": 649,
+        "category": 2
+    },
+    
+    "p18" :{
+        "id": 18,
+        "image": "/images/products/HM2.png",
+        "brand": "Homeland",
+        "name": "Essential Growth™ Crewneck Sweatshirt",
+        "price": 1190,
+        "category": 2
+    },
+    
+    "p19" :{
+        "id": 19,
+        "image": "/images/products/HM3.png",
+        "brand": "Homeland",
+        "name": "Homeland & Leisure™ Visualize Oversized Boxy Tee",
+        "price": 650,
+        "category": 2
+    },
+    
+    "p20" :{
+        "id": 20,
+        "image": "/images/products/HM4.png",
+        "brand": "Homeland",
+        "name": "World Betterment™ - White/Rose Pink",
+        "price": 549,
+        "category": 2
+    },
+    
+    "p21" :{
+        "id": 21,
+        "image": "/images/products/HM5.png",
+        "brand": "Homeland",
+        "name": "Caffeine Club™ Oversized Boxy Tee",
+        "price": 870,
+        "category": 2
+    },
+    
+    "p22" :{
+        "id": 22,
+        "image": "/images/products/HM6.png",
+        "brand": "Homeland",
+        "name": "World Betterment™ Earth Day Hooded Sweatshirt",
+        "price": 1790,
+        "category": 2
+    },
+    
+    "p23" :{
+        "id": 23,
+        "image": "/images/products/HM7.png",
+        "brand": "Homeland",
+        "name": "Homeland & Leisure™ Arc Regular Fit Tee",
+        "price": 650,
+        "category": 2
+    },
+    
+    "p24" :{
+        "id": 24,
+        "image": "/images/products/HM8.png",
+        "brand": "Homeland",
+        "name": "Blissful Intentions™ Oversized Boxy Tee",
+        "price": 750,
+        "category": 2
+    }
+}
+

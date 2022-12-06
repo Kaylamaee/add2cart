@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Neue Montreal;
+    src: url("/public/fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: Neue Einstellung;
+    src: url("/public/fonts/NeueEinstellung-Regular.ttf");
+}
+
+@font-face {
+    font-family: Maharlika;
+    src: url("/public/fonts/Maharlika-Regular.ttf");
+}

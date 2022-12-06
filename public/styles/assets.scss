@@ -1,0 +1,163 @@
+@import "fonts";
+
+/*COLOR PALETTE*/
+$color1: #B87D6F;
+$color2: #EBE0DD;
+$color3: #FFFFFF;
+$color4: #737373;
+$color5: #C4B0AC;
+$color6: #545454;
+$color7: #A6A6A6;
+$color8: #F4F4F4;
+$color9: #000000;
+$color10: rgb(228, 228, 228);
+$color11: #FBF6F3;
+
+/*FONTS*/
+
+$font1: Neue Montreal;
+$font2: Neue Einstellung;
+$font3: Maharlika;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+    overflow: auto;
+}
+
+button:hover, a:hover{
+    transition-duration: 0.4s;
+}
+
+#help img {
+    width: 50px;
+}
+
+#help {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+body{
+    background-color: transparent;
+}
+
+.nav{
+    background-color: $color1;
+}
+
+.nav-categories{
+    font: $font2;
+    color: white;
+    list-style: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-header {
+    width: 100%;
+    background-color: $color1;
+  }
+
+.logo {
+    margin-left: 2%;
+    padding-right: 2%;
+  
+}
+
+.ul-toggle{
+    list-style-type: none;
+    li{
+        display: inline-block;
+        gap: 20px;
+    }
+}
+
+#navbarSupportedContent{
+    width: 100%;
+}
+
+.nav-link{
+    margin: 0;
+    font-family: $font1;
+
+    #link {
+        color: $color2;
+        text-decoration: none;
+        font-size: 120%;       
+    }
+        
+    .active {
+        color: $color3;
+        background: $color5;
+        text-decoration: none;
+        padding: 17px;
+        font-family: $font1;
+        font-size: 120%;
+    }
+    
+    #link:hover{
+        color: $color3;
+    }
+}
+
+.nav-search:focus{
+    box-shadow: none;
+    font-family: $font1;
+    border: none;
+}
+
+.nav-search{
+    font-family: $font1;
+    letter-spacing: 0.05em;
+    border: none;
+}
+
+.icons{
+    list-style-type: none;
+}
+.icons-navlink {
+    display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: center;
+}
+
+.dropdown-menu{
+    font-family: $font2;
+
+    .dropdown-item{
+        color: $color1;
+    }
+
+    .dropdown-item:hover{
+        background-color: $color8;
+        cursor: pointer;
+    }
+}
+
+#accDropDown{
+    li{
+        color: $color1;
+        font-size: auto;
+        letter-spacing: 0.05em;
+        background-color: transparent;
+        font-family: $font1;
+        padding: 8%;
+        border: none;
+        background-color: $color2; 
+    }
+}

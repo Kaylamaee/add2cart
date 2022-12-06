@@ -1,0 +1,349 @@
+@import url(c:\Users\athen\OneDrive\Desktop\school\ICS2609\project\new-hiraya\public\styles\fonts.css);
+/*COLOR PALETTE*/
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+button:hover, a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#help img {
+  width: 50px;
+}
+
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav {
+  background-color: #B87D6F;
+}
+
+.nav-categories {
+  font: Neue Einstellung;
+  color: white;
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-header {
+  width: 100%;
+  background-color: #B87D6F;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.ul-toggle {
+  list-style-type: none;
+}
+
+.ul-toggle li {
+  display: inline-block;
+  gap: 20px;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 0;
+  font-family: Neue Montreal;
+}
+
+.nav-link #link {
+  color: #EBE0DD;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.nav-link .active {
+  color: #FFFFFF;
+  background: #C4B0AC;
+  text-decoration: none;
+  padding: 17px;
+  font-family: Neue Montreal;
+  font-size: 120%;
+}
+
+.nav-link #link:hover {
+  color: #FFFFFF;
+}
+
+.nav-search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Neue Montreal;
+  border: none;
+}
+
+.nav-search {
+  font-family: Neue Montreal;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.icons {
+  list-style-type: none;
+}
+
+.icons-navlink {
+  display: inline-block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  font-family: Neue Einstellung;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #B87D6F;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
+#accDropDown li {
+  color: #B87D6F;
+  font-size: auto;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  font-family: Neue Montreal;
+  padding: 8%;
+  border: none;
+  background-color: #EBE0DD;
+}
+
+.my-acc-details .edit-detail-label {
+  font-family: Neue Montreal;
+  font-weight: lighter;
+}
+
+.input-details {
+  border: none;
+  font-family: Neue Einstellung;
+  background-color: #EBE0DD;
+}
+
+.input-details:focus {
+  outline: 1px solid #B87D6F;
+  border-radius: 5px;
+}
+
+.input-details::-webkit-input-placeholder {
+  font-family: Neue Einstellung;
+  opacity: 100%;
+  color: #000000;
+}
+
+.input-details:-ms-input-placeholder {
+  font-family: Neue Einstellung;
+  opacity: 100%;
+  color: #000000;
+}
+
+.input-details::-ms-input-placeholder {
+  font-family: Neue Einstellung;
+  opacity: 100%;
+  color: #000000;
+}
+
+.input-details::placeholder {
+  font-family: Neue Einstellung;
+  opacity: 100%;
+  color: #000000;
+}
+
+.input-details:hover {
+  outline: 1px solid #C4B0AC;
+  border-radius: 5px;
+}
+
+.save-changes-btn {
+  margin: 3%;
+  margin-right: 20%;
+  font-family: Neue Montreal;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  background-color: #B87D6F;
+  border: none;
+  color: #FFFFFF;
+  padding: 1% 3%;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  font-size: 110%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.save-changes-btn:hover {
+  background-color: #C4B0AC;
+  color: #FFFFFF;
+}
+
+.details-mobile {
+  font-family: Neue Montreal;
+  font-weight: lighter;
+  text-align: right;
+}
+
+p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#name {
+  font-family: Neue Montreal;
+  font-size: 170%;
+  margin-right: 2%;
+  vertical-align: middle;
+}
+
+#username {
+  font-family: Neue Einstellung;
+  font-size: 110%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tabs {
+  margin-top: 20%;
+  font-family: Neue Montreal;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.inactive-header-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.inactive-header-link:hover {
+  color: #EBE0DD;
+}
+
+.active-header-link {
+  text-decoration: none;
+  font-weight: lighter;
+  color: #FFFFFF;
+  font-size: 20px;
+  background-color: #B87D6F;
+  font-size: 120%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+#leftsubnav:hover, #rightsubnav:hover {
+  color: #EBE0DD;
+  cursor: pointer;
+}
+
+.line {
+  padding: 8px;
+  border-bottom: 1px solid #C4B0AC;
+}
+
+.sidebar {
+  border-right: 1px solid #C4B0AC;
+  padding-right: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: center;
+}
+
+.sidebar ul li {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  color: #000000;
+  font-family: Neue Montreal;
+  font-weight: lighter;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.sidebar ul a:hover {
+  color: #B87D6F;
+}
+
+.first a {
+  background-color: #EBE0DD;
+}
+
+.sidebar a:hover {
+  color: #B87D6F;
+}
+
+.inputfield label {
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2%;
+}
+
+.inputfield #new-pass-label, .inputfield #cnfm-pass-label {
+  width: 250px;
+  font-family: Neue Montreal;
+  font-weight: lighter;
+}
+
+.inputfield #password1, .inputfield #password2 {
+  outline: none;
+  background-color: #EBE0DD;
+  border: 1px solid #EBE0DD;
+  padding: 2px;
+  font-family: Neue Einstellung;
+}
+
+h4 {
+  font-family: Neue Montreal;
+  font-weight: lighter;
+}
+/*# sourceMappingURL=my-acc.css.map */

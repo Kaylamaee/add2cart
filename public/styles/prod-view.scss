@@ -1,0 +1,106 @@
+@import 'assets';
+
+#top-divider, #bottom-divider{
+    border: 1px solid $color5;
+    opacity: 100;
+    background-color: $color5;
+}
+
+#top-divider{
+    margin-top: 4%;
+}
+
+.product-desc{
+    padding-bottom: 5%;
+
+    #prod-brand{
+        font-family: $font1;
+        font-size: 325%;
+        color: $color1;
+        margin-bottom: -0.30%;
+        font-weight: bolder;
+        letter-spacing: 0.02em;
+    }
+
+    #prod-name{
+        font-family: $font2;
+        font-weight: lighter;
+        color: $color1;
+        font-size: 225%;
+    }
+
+    #prod-price{
+        font-family: $font2;
+        color: $color5;
+        font-weight: bold;
+        font-size: 200%;
+        margin-top: 1.5%;
+    }
+
+    .size-quantity{
+        margin-top: 10%;
+        font-family: $font2;
+        color: $color6;
+        
+        h3{
+            font-weight: lighter;
+            vertical-align: middle;
+        }
+
+        h4{
+            text-align: center;
+            margin: 0;
+        }
+
+        button {
+            all: unset;
+            cursor: pointer;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+       #s-prev, #q-less{
+            float: right;
+        }
+    }
+
+}
+
+.cart-buy{
+    padding-top: 10%;
+
+    button {
+        all: unset;
+        cursor: pointer;
+    }
+
+    #add-cart, #buy-now{
+        font-family: $font1;
+        letter-spacing: 0.05em;
+        font-size: 120%;
+        color: $color3;
+        background-color: $color1;
+        padding: 3.5% 8%;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    #buy-now{
+        padding: 3.5% 18%;
+    }
+
+    .buy-now{
+        text-decoration: none;
+    }
+    
+    #add-cart:hover, #buy-now:hover{
+        background-color: $color2;
+        color: $color1;
+    }
+
+    #add-cart:active, #buy-now:active{
+        background-color: $color5;
+        color: $color3;
+    }
+}
+
